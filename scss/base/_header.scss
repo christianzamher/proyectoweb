@@ -1,0 +1,146 @@
+/* header*/
+.grid-header{
+	padding: $paddingGeneral;
+	grid-area: header
+}
+
+.nav-item{
+	display: flex;
+	flex-flow: column nowrap;
+    align-items: flex-start;
+	justify-content: center;
+	letter-spacing: 5px; 
+	
+}
+
+.ul-header{
+	display: flex;
+	justify-items: center;
+	list-style:none;
+	font-size: 14px;
+	padding-top: 30px;
+	padding-left: 0px;
+}
+
+.logoWeb{
+	width: 470px; 
+	height: 130px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px){
+	.logoWeb{
+		width: 950px;
+    	height: 220px;
+		padding-right: 10px;
+	
+	}
+	.ul-header{
+		display: flex;
+		justify-items: center;
+		list-style:none;
+		font-size: 25px;
+		padding-top: 30px;
+		padding-left: 0px;
+	}
+
+	.nav-item{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.off {
+		display: none;
+	}
+
+	.grid-header {
+		padding: 0px; 
+		
+	}
+	.liMobile{
+		padding: 0px 30px 0px 30px;
+	}
+	.menuMobile {
+		text-decoration: none;
+		color: #e6ab5e;
+		padding: 0 100px;
+	}
+	.nav-item {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		letter-spacing: 124px;
+	}
+
+	
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+	.logoWeb {
+		width: 950px;
+		height: 220px;
+		padding-right: 10px;
+	}
+	.ul-header{
+		display: flex;
+		justify-content: space-between;
+		list-style:none;
+		font-size: 25px;
+		padding-top: 40px;
+		padding-left: 0px;
+	}
+
+	.nav-item{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.off {
+		display: none;
+	}
+	.grid-header {
+		padding: 0px; 
+		
+	}
+	.liMobile{
+		padding: 0px 30px 0px 30px;
+	}
+	.menuMobile {
+		text-decoration: none;
+		color: #e6ab5e;
+		padding: 0 100px;
+	}
+	.nav-item {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		letter-spacing: 124px;
+	}
+
+	
+}
+
+@media screen and (min-width: 801px) and (max-width: 1500px){
+	.logoWeb{
+		width: 1000px;
+		height: 230px;
+	}
+	.ul-header{
+		display: flex;
+		justify-items: center;
+		list-style:none;
+		font-size: 40px;
+		padding-top: 30px;
+		padding-left: 0px;
+	}
+
+	.nav-item{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.menuMobile a {
+		text-decoration: none;
+		color: #e6ab5e;
+		padding: 0 100px;
+	}
+	
+}
+
+

@@ -1,0 +1,20 @@
+/* mixins*/
+@mixin parrafoWelcome ($size , $align , $space) {
+    font-size: $size;
+    text-align: $align;
+    letter-spacing: $space;
+}
+
+.welcome{
+    @include parrafoWelcome(25px, center, 2px)
+}
+
+.aboutUs{
+    @include parrafoWelcome(25px, left, 2px)
+}
+
+@mixin general($padding , $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+

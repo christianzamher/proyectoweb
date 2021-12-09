@@ -1,0 +1,73 @@
+.grid-aside{
+    padding: $paddingGeneral;
+    grid-area: aside
+}
+
+.asideIndex{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    
+}
+        
+
+        
+.nav{
+    display: flex;
+    flex-direction: column;
+    flex:2 1 auto;
+    justify-content: space-between;
+            
+}
+
+.animated{
+    font-size: 11px;
+    text-align: right;
+    letter-spacing: 2px; 
+        
+}
+    
+
+
+.imgWelcome{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    
+    
+    
+    
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px){
+	
+    .p-item{
+        font-size:14px;
+        text-align: center;
+    }
+    .imgWelcome{
+        display: none;
+    }
+    .img-contact{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+	
+    .p-item{
+        font-size:14px;
+        text-align: center;
+    }
+    .imgWelcome{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1700px){
+	
+    .p-item{
+        font-size:14px;
+        text-align: center;
+    }
+}

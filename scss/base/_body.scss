@@ -1,0 +1,102 @@
+/* Seteos Generales */
+*{
+	
+	margin: 0;
+}
+
+html{
+	scroll-behavior: $scroll;
+}
+body{
+	
+	font-family: 'Roboto', sans-serif;
+	background: url(/images/coriwebfondo8.jpg);
+	background-position: 0px 180px;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-color: #a58911f7;
+	
+	
+}
+
+.menuMobile{
+	text-decoration: none;
+	color: #e6ab5e;
+	padding: 0 9px;
+	
+        &:hover{
+	        filter: opacity(.9);
+	        transition:all 1s ease-in-out;
+	        color: #a77431;
+	        text-decoration: none;
+        }
+}
+
+/*body */
+.grid-container{
+	margin: 10px;
+	display: grid;
+	grid-template-areas: 
+	"header header header"
+	"aside main main"
+	"aside main main"
+	"aside main main"
+	"aside main main"
+	"footer footer footer";
+	grid-template-rows: repeat(auto-fill,1fr);
+	height: 900px;
+	gap: 5px ;
+}
+
+
+
+h2{
+	color:#deb887
+}
+h3{
+	color:#deb887
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 100px) and (max-width: 600px){
+	body{
+		background: url(/images/coriwebfondo8.jpg);
+		background-position: 0px 250px;
+		background-color: $bgMobile;
+		background-repeat:no-repeat;
+		
+		padding: 10px;
+		color: #000000;
+	}
+	
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+	body{
+		background: url(/images/coriwebfondo8.jpg);
+		background-position: 0px 250px;
+		background-color: $bgMobile;
+		background-repeat:no-repeat;
+		padding: 10px;
+		color: #000000;
+	}
+	
+	
+}
+@media screen and (min-width: 801px)  and (max-width: 1700px){
+	body{
+		background: url(/images/coriwebfondo8.jpg);
+		background-position: 0px 290px;
+		background-color: $bgMobile;
+		background-repeat:no-repeat;
+		padding: 10px;
+		color: #000000;
+	}
+	
+}
