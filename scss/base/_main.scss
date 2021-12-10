@@ -68,7 +68,7 @@
 }
 
 
-@media screen and (min-width: 200px) and (max-width: 600px){
+@media screen and (min-width: 100px) and (max-width: 600px){
     .mobileIndex{
         display: flex;
         flex-flow: column wrap;
@@ -103,6 +103,9 @@
         
         background-color: #00000080;
     }
+    .img-contact{
+        display: none;
+    }
     
 	
 }
@@ -132,6 +135,9 @@
     }
     .offIndex{
         display:flex;
+    }
+    .img-contact{
+        display: none;
     }
     
     
@@ -164,6 +170,7 @@
         height: 100%;
         margin: 0px;
     }
+    
     
 }
 

@@ -84,7 +84,8 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 @media screen and (min-width: 100px) and (max-width: 600px) {
   .logoWeb {
     width: 950px;
-    height: 220px;
+    max-width: 100%;
+    height: auto;
     padding-right: 10px;
   }
 
@@ -94,12 +95,8 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     list-style: none;
     font-size: 25px;
     padding-top: 30px;
-    padding-left: 0px;
-  }
-
-  .nav-item {
-    display: flex;
-    flex-flow: row wrap;
+    padding-left: 100px;
+    letter-spacing: 90px;
   }
 
   .off {
@@ -124,13 +121,14 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    letter-spacing: 124px;
+    letter-spacing: 10px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .logoWeb {
-    width: 950px;
-    height: 220px;
+    width: 935px;
+    max-width: 100%;
+    height: auto;
     padding-right: 10px;
   }
 
@@ -139,8 +137,8 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     justify-content: space-between;
     list-style: none;
     font-size: 25px;
-    padding-top: 40px;
-    padding-left: 0px;
+    padding: 40px 0px 0px 60px;
+    letter-spacing: 90px;
   }
 
   .nav-item {
@@ -170,7 +168,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    letter-spacing: 124px;
+    letter-spacing: 10px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1500px) {
@@ -478,33 +476,34 @@ h3 {
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
-  body {
+  .grid-container {
     background: url(/images/coriwebfondo8.jpg);
-    background-position: 0px 250px;
     background-color: #837e51f0;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-attachment: fixed;
     padding: 10px;
     color: #000000;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
-  body {
+  .grid-container {
     background: url(/images/coriwebfondo8.jpg);
-    background-position: 0px 250px;
     background-color: #837e51f0;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     padding: 10px;
     color: #000000;
+    background-attachment: fixed;
   }
 }
-@media screen and (min-width: 801px) and (max-width: 1700px) {
-  body {
+@media screen and (min-width: 801px) and (max-width: 1500px) {
+  .grid-container {
     background: url(/images/coriwebfondo8.jpg);
     background-position: 0px 290px;
     background-color: #837e51f0;
     background-repeat: no-repeat;
     padding: 10px;
     color: #000000;
+    background-attachment: fixed;
   }
 }
 /*Main */
@@ -573,7 +572,7 @@ h3 {
   padding-right: 195px;
 }
 
-@media screen and (min-width: 200px) and (max-width: 600px) {
+@media screen and (min-width: 100px) and (max-width: 600px) {
   .mobileIndex {
     display: flex;
     flex-flow: column wrap;
@@ -603,6 +602,10 @@ h3 {
     padding: 28px 24px 20px 0px;
     background-color: #00000080;
   }
+
+  .img-contact {
+    display: none;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .mobileIndex {
@@ -627,6 +630,10 @@ h3 {
 
   .offIndex {
     display: flex;
+  }
+
+  .img-contact {
+    display: none;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1700px) {
