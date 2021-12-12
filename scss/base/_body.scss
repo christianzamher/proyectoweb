@@ -56,12 +56,12 @@ h3{
 
 @media screen and (min-width: 100px) and (max-width: 600px){
 	.grid-container {
-		background-color: #F2DDC1;
+		background-color: #f2ddc1d1;
 		font-family: 'Roboto', sans-serif;
 	}
 	.menuMobile{
 		text-decoration: none;
-		color: #a5918b;
+		color: #b3958d;
 		padding: 0 9px;
 		font-size: 19px;
 		
@@ -72,15 +72,14 @@ h3{
 
 @media screen and (min-width: 601px) and (max-width: 800px){
 	.grid-container {
-		background-color: #F2DDC1;
+		background-color: #f2ddc1d1;
 		font-family: 'Roboto', sans-serif;
 	}
 	.menuMobile{
 		text-decoration: none;
-		color: #E2C2B9;
+		color: #b3958d;
 		padding: 0 9px;
-		
-			
+		font-size: 19px;
 	}
 	
 	
@@ -94,6 +93,20 @@ h3{
 		background-attachment: fixed;
 		font-family: 'Roboto', sans-serif;
 	}
+	.menuMobile{
+		text-decoration: none;
+		color: #e6ab5e;
+		padding: 0 9px;
+		
+			&:hover{
+				filter: opacity(.9);
+				transition:all 0.5s ease-in-out;
+				color: #a77431;
+				text-decoration: none;
+				border-radius: 5px;
+			}
+	}
+	
 	
 }
 @media screen and (min-width: 1501px){
@@ -108,6 +121,19 @@ h3{
 		background-color: $bgMobile;
 		
 		
+	}
+	.menuMobile{
+		text-decoration: none;
+		color: #e6ab5e;
+		padding: 0 9px;
+		
+			&:hover{
+				filter: opacity(.9);
+				transition:all 0.5s ease-in-out;
+				color: #a77431;
+				text-decoration: none;
+				border-radius: 5px;
+			}
 	}
 
 }

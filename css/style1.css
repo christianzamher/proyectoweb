@@ -460,27 +460,28 @@ h3 {
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
   .grid-container {
-    background-color: #F2DDC1;
+    background-color: #f2ddc1d1;
     font-family: "Roboto", sans-serif;
   }
 
   .menuMobile {
     text-decoration: none;
-    color: #a5918b;
+    color: #b3958d;
     padding: 0 9px;
     font-size: 19px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .grid-container {
-    background-color: #F2DDC1;
+    background-color: #f2ddc1d1;
     font-family: "Roboto", sans-serif;
   }
 
   .menuMobile {
     text-decoration: none;
-    color: #E2C2B9;
+    color: #b3958d;
     padding: 0 9px;
+    font-size: 19px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1500px) {
@@ -492,6 +493,19 @@ h3 {
     background-attachment: fixed;
     font-family: "Roboto", sans-serif;
   }
+
+  .menuMobile {
+    text-decoration: none;
+    color: #e6ab5e;
+    padding: 0 9px;
+  }
+  .menuMobile:hover {
+    filter: opacity(0.9);
+    transition: all 0.5s ease-in-out;
+    color: #a77431;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 }
 @media screen and (min-width: 1501px) {
   .grid-container {
@@ -502,6 +516,19 @@ h3 {
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #a58911f7;
+  }
+
+  .menuMobile {
+    text-decoration: none;
+    color: #e6ab5e;
+    padding: 0 9px;
+  }
+  .menuMobile:hover {
+    filter: opacity(0.9);
+    transition: all 0.5s ease-in-out;
+    color: #a77431;
+    text-decoration: none;
+    border-radius: 5px;
   }
 }
 /*Main */
@@ -560,7 +587,7 @@ h3 {
   color: #95a0ab;
   border-radius: 10px;
   margin-top: 10px;
-  background-color: #0000008c;
+  background-color: #443939e0;
 }
 
 .social {
@@ -606,6 +633,17 @@ h3 {
 
   .img-contact {
     display: none;
+  }
+
+  h3 {
+    color: black;
+    display: inline;
+    border-radius: 5px;
+  }
+
+  h2 {
+    color: black;
+    border-radius: 5px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
