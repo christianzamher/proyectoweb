@@ -40,6 +40,10 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: flex;
     flex-flow: row wrap;
   }
+
+  .grid-footer {
+    background-color: rgba(61, 61, 60, 0.76);
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .ul-footer {
@@ -150,10 +154,6 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: none;
   }
 
-  .grid-header {
-    padding: 0px;
-  }
-
   .liMobile {
     padding: 0px 30px 0px 30px;
   }
@@ -238,21 +238,10 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 .articulo-1 {
   margin: 10px 10px 0 0px;
   flex: 1 1 45%;
-  /*  a{
-       color:#fff;
-    font-size: 13px;
-    padding: 10px 20px;
-    background: #e97727;
-    margin:10px 0;
-    border-radius: 0.25rem;
-
-   &:hover{
-       background: #81817b;
-       }
-   } */
 }
 .articulo-1 img {
   max-width: 100%;
+  width: 515px;
 }
 
 .imgGalleryBottom {
@@ -276,21 +265,11 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
 }
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 85%;
-    padding-left: 587px;
-  }
-
   .columna-1 {
     display: flex;
     flex-flow: column wrap;
     height: 100%;
-    margin-bottom: 5px;
-    margin-right: -5px;
-    padding-right: 250px;
+    margin: 0px -5px 5px -20px;
   }
 
   .columnaSection {
@@ -299,7 +278,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     flex-flow: row wrap;
     height: 100%;
     margin-bottom: 5px;
-    margin-left: -112px;
+    margin-left: -585px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -320,7 +299,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: flex;
     flex-flow: column wrap;
     height: 100%;
-    margin: 0px 100px 5px 200px;
+    margin: 0px 0px 5px 0px;
     padding-right: 40px;
   }
 
@@ -334,7 +313,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: flex;
     flex-flow: row wrap;
     height: 100%;
-    margin: 0px 200px 0px -200px;
+    margin: 0px 130px 0px 0px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1700px) {
@@ -409,6 +388,11 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
   .img-contact {
     display: none;
   }
+
+  .grid-aside {
+    padding: 0;
+    grid-area: aside;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .p-item {
@@ -435,16 +419,18 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background: url(/images/coriwebfondo8.jpg);
-  background-position: 0px 180px;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: #a58911f7;
-}
+/* body{
 
+	font-family: 'Roboto', sans-serif;
+	background: url(/images/coriwebfondo8.jpg);
+	background-position: 0px 180px;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat:no-repeat;
+	background-color: #a58911f7;
+
+
+} */
 .menuMobile {
   text-decoration: none;
   color: #e6ab5e;
@@ -452,9 +438,10 @@ body {
 }
 .menuMobile:hover {
   filter: opacity(0.9);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: #a77431;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 /*body */
@@ -477,33 +464,47 @@ h3 {
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
   .grid-container {
-    background: url(/images/coriwebfondo8.jpg);
-    background-color: #837e51f0;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    padding: 10px;
-    color: #000000;
+    background-color: #F2DDC1;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .menuMobile {
+    text-decoration: none;
+    color: #E2C2B9;
+    padding: 0 9px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .grid-container {
-    background: url(/images/coriwebfondo8.jpg);
-    background-color: #837e51f0;
-    background-repeat: repeat;
-    padding: 10px;
-    color: #000000;
-    background-attachment: fixed;
+    background-color: #F2DDC1;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .menuMobile {
+    text-decoration: none;
+    color: #E2C2B9;
+    padding: 0 9px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1500px) {
   .grid-container {
     background: url(/images/coriwebfondo8.jpg);
     background-position: 0px 290px;
-    background-color: #837e51f0;
+    background-color: #a58911f7;
     background-repeat: no-repeat;
-    padding: 10px;
-    color: #000000;
     background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+  }
+}
+@media screen and (min-width: 1501px) {
+  .grid-container {
+    font-family: "Roboto", sans-serif;
+    background: url(/images/coriwebfondo8.jpg);
+    background-position: 0px 180px;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #a58911f7;
   }
 }
 /*Main */
@@ -538,12 +539,12 @@ h3 {
 
 .p-article {
   display: flex;
-  width: 440px;
-  text-align: inherit;
-  color: burlywood;
-  font-size: 15px;
+  width: 515px;
+  text-align: center;
+  color: white;
+  font-size: 19px;
   letter-spacing: 1px;
-  padding: 30px 80px 20px 20px;
+  padding: 30px 20px 30px 20px;
   line-height: 1.45;
   text-transform: none;
   background-color: #00000080;
@@ -589,8 +590,10 @@ h3 {
 
   .social {
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
   }
 
   .p-article {
@@ -599,8 +602,9 @@ h3 {
     color: white;
     font-size: 25px;
     letter-spacing: 1px;
-    padding: 28px 24px 20px 0px;
-    background-color: #00000080;
+    padding: 28px 24px 20px 24px;
+    background-color: #99A799;
+    width: 515px;
   }
 
   .img-contact {
@@ -621,6 +625,7 @@ h3 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    padding: 0;
   }
 
   .imgAbout {
@@ -634,6 +639,17 @@ h3 {
 
   .img-contact {
     display: none;
+  }
+
+  .p-article {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 28px 24px 20px 24px;
+    background-color: #99A799;
+    width: 500px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1700px) {
@@ -663,6 +679,7 @@ h3 {
   .imgAbout {
     height: 100%;
     margin: 0px;
+    width: 600px;
   }
 }
 /*formulario*/

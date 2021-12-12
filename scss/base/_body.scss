@@ -7,7 +7,7 @@
 html{
 	scroll-behavior: $scroll;
 }
-body{
+/* body{
 	
 	font-family: 'Roboto', sans-serif;
 	background: url(/images/coriwebfondo8.jpg);
@@ -18,7 +18,7 @@ body{
 	background-color: #a58911f7;
 	
 	
-}
+} */
 
 .menuMobile{
 	text-decoration: none;
@@ -27,9 +27,10 @@ body{
 	
         &:hover{
 	        filter: opacity(.9);
-	        transition:all 1s ease-in-out;
+	        transition:all 0.5s ease-in-out;
 	        color: #a77431;
 	        text-decoration: none;
+			border-radius: 5px;
         }
 }
 
@@ -65,27 +66,31 @@ h3{
 
 
 @media screen and (min-width: 100px) and (max-width: 600px){
-	.grid-container{
-		background: url(/images/coriwebfondo8.jpg);
+	.grid-container {
+		background-color: #F2DDC1;
+		font-family: 'Roboto', sans-serif;
+	}
+	.menuMobile{
+		text-decoration: none;
+		color: #E2C2B9;
+		padding: 0 9px;
 		
-		background-color: $bgMobile;
-		background-repeat:repeat;
-		background-attachment: fixed;
-		padding: 10px;
-		color: #000000;
+			
 	}
 	
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px){
-	.grid-container{
-		background: url(/images/coriwebfondo8.jpg);
+	.grid-container {
+		background-color: #F2DDC1;
+		font-family: 'Roboto', sans-serif;
+	}
+	.menuMobile{
+		text-decoration: none;
+		color: #E2C2B9;
+		padding: 0 9px;
 		
-		background-color: $bgMobile;
-		background-repeat:repeat;
-		padding: 10px;
-		color: #000000;
-		background-attachment: fixed;
+			
 	}
 	
 	
@@ -96,9 +101,23 @@ h3{
 		background-position: 0px 290px;
 		background-color: $bgMobile;
 		background-repeat:no-repeat;
-		padding: 10px;
-		color: #000000;
 		background-attachment: fixed;
+		font-family: 'Roboto', sans-serif;
 	}
 	
+}
+@media screen and (min-width: 1501px){
+	.grid-container{
+	
+		font-family: 'Roboto', sans-serif;
+		background: url(/images/coriwebfondo8.jpg);
+		background-position: 0px 180px;
+		background-attachment: fixed;
+		background-size: 100%;
+		background-repeat:no-repeat;
+		background-color: $bgMobile;
+		
+		
+	}
+
 }
