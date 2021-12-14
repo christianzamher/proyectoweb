@@ -55,7 +55,7 @@ h3{
 
 
 @media screen and (min-width: 100px) and (max-width: 600px){
-	.grid-container {
+	body {
 		background-color: #f2ddc1d1;
 		font-family: 'Roboto', sans-serif;
 	}
@@ -71,7 +71,7 @@ h3{
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px){
-	.grid-container {
+	body {
 		background-color: #f2ddc1d1;
 		font-family: 'Roboto', sans-serif;
 	}
@@ -85,7 +85,7 @@ h3{
 	
 }
 @media screen and (min-width: 801px)  and (max-width: 1500px){
-	.grid-container{
+	body{
 		background: url(/images/coriwebfondo8.jpg);
 		background-position: 0px 290px;
 		background-color: $bgMobile;
@@ -109,16 +109,16 @@ h3{
 	
 	
 }
-@media screen and (min-width: 1501px){
-	.grid-container{
+@media screen and (min-width: 1501px) and (max-width: 3000px){
+	body{
 	
 		font-family: 'Roboto', sans-serif;
-		background: url(/images/coriwebfondo8.jpg);
+		background: url("/images/coriwebfondo8.jpg");
 		background-position: 0px 180px;
 		background-attachment: fixed;
 		background-size: 100%;
 		background-repeat:no-repeat;
-		background-color: $bgMobile;
+		background-color: $bgBody;
 		
 		
 	}
