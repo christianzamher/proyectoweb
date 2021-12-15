@@ -29,10 +29,10 @@ html{
 	display: grid;
 	grid-template-areas: 
 	"header header header"
-	"aside main main"
-	"aside main main"
-	"aside main main"
-	"aside main main"
+	"main main aside"
+	"main main aside"
+	"main main aside"
+	"main main aside"
 	"footer footer footer";
 	grid-template-rows: repeat(auto-fill,1fr);
 	height: 900px;
@@ -56,7 +56,7 @@ h3{
 
 @media screen and (min-width: 100px) and (max-width: 600px){
 	body {
-		background-color: #f2ddc1d1;
+		background-color: #dbc2a2d1;
 		font-family: 'Roboto', sans-serif;
 	}
 	.menuMobile{
@@ -72,7 +72,7 @@ h3{
 
 @media screen and (min-width: 601px) and (max-width: 800px){
 	body {
-		background-color: #f2ddc1d1;
+		background-color: #dbc2a2d1;
 		font-family: 'Roboto', sans-serif;
 	}
 	.menuMobile{
@@ -124,13 +124,14 @@ h3{
 	}
 	.menuMobile{
 		text-decoration: none;
-		color: #e6ab5e;
+		color: #d59643;
 		padding: 0 9px;
+		font-size: 18px;
 		
 			&:hover{
 				filter: opacity(.9);
 				transition:all 0.5s ease-in-out;
-				color: #a77431;
+				color: #d1c1a2;
 				text-decoration: none;
 				border-radius: 5px;
 			}

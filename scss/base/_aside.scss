@@ -68,10 +68,16 @@
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1700px){
+@media screen and (min-width: 801px) and (max-width: 1400px){
 	
     .p-item{
         font-size:14px;
         text-align: center;
+    }
+    .imgWelcome{
+        display: none;
+    }
+    blockquote{
+        display: none;
     }
 }

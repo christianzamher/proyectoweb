@@ -220,7 +220,6 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
   flex-flow: row wrap;
   height: 100%;
   margin-bottom: 5px;
-  margin-left: -425px;
 }
 
 .navegacion {
@@ -274,6 +273,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     flex-flow: column wrap;
     height: 100%;
     margin: 0px -5px 5px -20px;
+    padding-left: 40px;
   }
 
   .columnaSection {
@@ -281,8 +281,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: flex;
     flex-flow: row wrap;
     height: 100%;
-    margin-bottom: 5px;
-    margin-left: -585px;
+    margin: 0px 0px 5px 110px;
   }
 
   .navMobile {
@@ -308,7 +307,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     flex-flow: column wrap;
     height: 100%;
     margin: 0px 0px 5px 0px;
-    padding-right: 40px;
+    padding-left: 100px;
   }
 
   .articleDescripcion {
@@ -320,8 +319,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     flex: 3 1;
     display: flex;
     flex-flow: row wrap;
-    height: 100%;
-    margin: 0px 130px 0px 0px;
+    margin: 0px 0px 0px 100px;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1700px) {
@@ -335,7 +333,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     justify-content: center;
     align-items: center;
     width: 75%;
-    padding-left: 70px;
+    padding-left: 420px;
   }
 
   .columna-1 {
@@ -349,7 +347,7 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
   }
 
   .articulo-1 {
-    margin: 10px 160px 0 -155px;
+    margin: 10px 160px 0 160px;
     flex: 1 1 45%;
   }
 }
@@ -412,10 +410,18 @@ img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost
     display: none;
   }
 }
-@media screen and (min-width: 801px) and (max-width: 1700px) {
+@media screen and (min-width: 801px) and (max-width: 1400px) {
   .p-item {
     font-size: 14px;
     text-align: center;
+  }
+
+  .imgWelcome {
+    display: none;
+  }
+
+  blockquote {
+    display: none;
   }
 }
 /* Seteos Generales */
@@ -444,7 +450,7 @@ html {
 .grid-container {
   margin: 10px;
   display: grid;
-  grid-template-areas: "header header header" "aside main main" "aside main main" "aside main main" "aside main main" "footer footer footer";
+  grid-template-areas: "header header header" "main main aside" "main main aside" "main main aside" "main main aside" "footer footer footer";
   grid-template-rows: repeat(auto-fill, 1fr);
   height: 900px;
   gap: 5px;
@@ -460,7 +466,7 @@ h3 {
 
 @media screen and (min-width: 100px) and (max-width: 600px) {
   body {
-    background-color: #f2ddc1d1;
+    background-color: #dbc2a2d1;
     font-family: "Roboto", sans-serif;
   }
 
@@ -473,7 +479,7 @@ h3 {
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
   body {
-    background-color: #f2ddc1d1;
+    background-color: #dbc2a2d1;
     font-family: "Roboto", sans-serif;
   }
 
@@ -488,7 +494,7 @@ h3 {
   body {
     background: url(/images/coriwebfondo8.jpg);
     background-position: 0px 290px;
-    background-color: #a58911f7;
+    background-color: #ada273f7;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Roboto", sans-serif;
@@ -520,13 +526,14 @@ h3 {
 
   .menuMobile {
     text-decoration: none;
-    color: #e6ab5e;
+    color: #d59643;
     padding: 0 9px;
+    font-size: 18px;
   }
   .menuMobile:hover {
     filter: opacity(0.9);
     transition: all 0.5s ease-in-out;
-    color: #a77431;
+    color: #d1c1a2;
     text-decoration: none;
     border-radius: 5px;
   }
@@ -572,9 +579,26 @@ h3 {
   line-height: 1.45;
   text-transform: none;
   background-color: #00000080;
+  border-radius: 10px;
 }
 
 .p-item {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 400px;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: -1px;
+  padding: 30px 20px 30px 20px;
+  line-height: 1.45;
+  text-transform: none;
+  color: #95a0ab;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #36322f8f;
+}
+
+.p-item2 {
   display: flex;
   flex-flow: column nowrap;
   width: 400px;

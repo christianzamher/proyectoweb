@@ -29,7 +29,7 @@
 	flex-flow: row wrap;
 	height: 100%;
 	margin-bottom: 5px;
-	margin-left: -425px;
+	
 }
 
 .navegacion{
@@ -94,7 +94,7 @@
 		flex-flow: column wrap;
 		height: 100%;
 		margin:0px -5px 5px -20px;
-		
+		padding-left:40px;
 	}
 	
 	.columnaSection{
@@ -102,8 +102,8 @@
 		display: flex;
 		flex-flow: row wrap;
 		height: 100%;
-		margin-bottom: 5px;
-		margin-left: -585px;
+		margin:0px 0px 5px 110px;
+		
 	}
 	.navMobile{
 		background-color: #3e4a3a;
@@ -136,7 +136,7 @@
 		flex-flow: column wrap;
 		height: 100%;
 		margin: 0px 0px 5px 0px;
-		padding-right: 40px;
+		padding-left: 100px;
 	}
 
 	.articleDescripcion{
@@ -147,8 +147,7 @@
 		flex:3 1;
 		display: flex;
 		flex-flow: row wrap;
-		height: 100%;
-		margin:0px 130px 0px 0px;
+		margin:0px 0px 0px 100px;
 	}
 	
 	
@@ -166,7 +165,8 @@
   		justify-content: center;
   		align-items: center;
 		width: 75%;
-		padding-left: 70px;
+		padding-left: 420px;
+		
 		  
 	}
 	.columna-1{
@@ -179,7 +179,7 @@
 		padding-right: 40px;
 	}
 	.articulo-1 {
-		margin: 10px 160px 0 -155px;
+		margin: 10px 160px 0 160px;
 		flex: 1 1 45%;
 	}
 	
