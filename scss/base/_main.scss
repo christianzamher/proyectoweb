@@ -31,11 +31,10 @@
 }
 .p-article {
     display: flex;
-    width: 515px;
+    width: 400px;
     text-align: center;
     color: white;
-    font-size: 19px;
-    letter-spacing: 1px;
+    font-size: 15px;
     padding: 30px 20px 30px 20px;
     line-height: 1.45;
     text-transform: none;
@@ -47,13 +46,13 @@
     flex-flow: column nowrap;
     width: 400px;
     text-align: center;
-    font-size: 21px;
-    letter-spacing: -1px;
+    font-size: 20px;
+    letter-spacing: 0px;
     padding: 30px 20px 30px 20px;
     line-height: 1.45;
     text-transform: none;
-    color: #95a0ab;
-    border-radius: 10px;
+    color: #c9c8c7;
+    border-radius: 10px 100px / 120px;
     margin-top: 10px;
     background-color: #36322f8f;
 }
@@ -81,6 +80,14 @@
 
 }
 
+.cardArticle{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    margin-top: 10px;
+}
+
+
 
 @media screen and (min-width: 100px) and (max-width: 600px){
     .mobileIndex{
@@ -94,7 +101,7 @@
     }
     .imgAbout {
         height: fit-content;
-        margin: 0px;
+        
     }
 
     .social{
@@ -112,9 +119,8 @@
         color: white;
         font-size: 25px;
         letter-spacing: 1px;
-        padding: 28px 24px 20px 24px;
         background-color: #99A799;
-        width: 515px;
+        width: auto;
     }
     .img-contact{
         display: none;
@@ -136,6 +142,20 @@
     .p-item2{
         display: none;
     }
+    .grid-main{
+        padding: 0px;
+        grid-area: main;
+    }
+
+    .cardArticle{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:center;
+        margin-top: 10px;
+        background-color: #69696979;
+    }
+    
+   
     
 	
 }
@@ -161,8 +181,7 @@
     }
     .imgAbout {
         height: fit-content;
-        
-        margin: 0px;
+        margin: 0px 0px 0px 60px;
     }
     .offIndex{
         display:flex;
@@ -194,12 +213,11 @@
         display: flex;
         flex-flow: column nowrap;
         width: 440px;
-        text-align:justify;
+        text-align:center;
         font-size: 18px;
         letter-spacing: 2px;
-        padding: 30px 80px 0px 20px;
-        line-height: 1.45;
-        text-transform: none;
+        
+        
         
     }
     .social{
@@ -211,7 +229,6 @@
     
     }
     .imgAbout {
-        height: 100%;
         margin: 0px;
         width: 600px;
     }

@@ -1,6 +1,6 @@
 /* Seteos Generales */
 *{
-	
+	padding: auto;
 	margin: 0;
 }
 
@@ -11,13 +11,13 @@ html{
 
 .menuMobile{
 	text-decoration: none;
-	color: #e6ab5e;
+	color: $MenuMobile;
 	padding: 0 9px;
 	
         &:hover{
 	        filter: opacity(.9);
 	        transition:all 0.5s ease-in-out;
-	        color: #a77431;
+	        color: $MenuMobileHover;
 	        text-decoration: none;
 			border-radius: 5px;
         }
@@ -56,23 +56,37 @@ h3{
 
 @media screen and (min-width: 100px) and (max-width: 600px){
 	body {
-		background-color: #dbc2a2d1;
+		background-color: #364048bd;
 		font-family: 'Roboto', sans-serif;
+		font-size: 2rem;
 	}
 	.menuMobile{
 		text-decoration: none;
 		color: #b3958d;
-		padding: 0 9px;
-		font-size: 19px;
+		padding: 0 30px;
+		font-size: 20px;
 		
 			
+	}
+	.grid-container {
+		margin: auto;
+		display: grid;
+		height: 900px;
+		gap: 5px;
+		grid-template-areas: 
+	"header header header"
+	"main main main"
+	"main main main"
+	"main main main"
+	"main main main"
+	"footer footer footer";
 	}
 	
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px){
 	body {
-		background-color: #dbc2a2d1;
+		background-color: #000000d1;
 		font-family: 'Roboto', sans-serif;
 	}
 	.menuMobile{
@@ -81,27 +95,41 @@ h3{
 		padding: 0 9px;
 		font-size: 19px;
 	}
+	.grid-container {
+		margin: auto;
+		display: grid;
+		height: 900px;
+		gap: 5px;
+	}
+	
+
+	
 	
 	
 }
 @media screen and (min-width: 801px)  and (max-width: 1500px){
 	body{
-		background: url(/images/coriwebfondo8.jpg);
-		background-position: 0px 290px;
-		background-color: $bgMobile;
-		background-repeat:no-repeat;
-		background-attachment: fixed;
+	
 		font-family: 'Roboto', sans-serif;
+		background: url("/images/coriwebfondo2.jpg");
+		background-position: 0px 210px;
+		background-attachment:fixed;
+		background-size: 100%;
+		background-color: #364048;
+		background-repeat: no-repeat;
+		
+		
 	}
 	.menuMobile{
 		text-decoration: none;
-		color: #e6ab5e;
-		padding: 0 9px;
+		color: #d59643;
+		padding: 0 20px;
+		font-size: 20px;
 		
 			&:hover{
 				filter: opacity(.9);
 				transition:all 0.5s ease-in-out;
-				color: #a77431;
+				color: #d1c1a2;
 				text-decoration: none;
 				border-radius: 5px;
 			}
@@ -113,20 +141,20 @@ h3{
 	body{
 	
 		font-family: 'Roboto', sans-serif;
-		background: url("/images/coriwebfondo8.jpg");
-		background-position: 0px 180px;
-		background-attachment: fixed;
+		background: url("/images/coriwebfondo2.jpg");
+		background-position: 0px 190px;
+		background-attachment:fixed;
 		background-size: 100%;
-		background-repeat:no-repeat;
-		background-color: $bgBody;
+		background-color: #364048;
+		background-repeat: no-repeat;
 		
 		
 	}
 	.menuMobile{
 		text-decoration: none;
 		color: #d59643;
-		padding: 0 9px;
-		font-size: 18px;
+		padding: 0 20px;
+		font-size: 20px;
 		
 			&:hover{
 				filter: opacity(.9);

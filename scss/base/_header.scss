@@ -1,6 +1,6 @@
 /* header*/
 .grid-header{
-	padding: $paddingGeneral;
+	
 	grid-area: header
 }
 
@@ -21,28 +21,30 @@
 	padding-top: 30px;
 	padding-left: 0px;
 }
-
 .logoWeb{
-	width: 500px; 
-	height: 130px;
+	height: 165px;
+	max-width: 100%;
 }
+
+
+
+
 
 @media screen and (min-width: 100px) and (max-width: 600px){
 	.logoWeb{
-		
-    	max-width: 100%;
+		max-width: 100%;
 		height: auto;
+		margin-left: 0.5%;
+		
+		
 		
 	
 	}
 	.ul-header{
 		display: flex;
-		justify-items: center;
 		list-style:none;
-		font-size: 25px;
 		padding-top: 30px;
-		padding-left: 100px;
-		letter-spacing: 90px;
+		padding-left: 0px;
 	}
 
 	
@@ -64,9 +66,9 @@
 	}
 	.nav-item {
 		display: flex;
-		flex-flow: row wrap;
+		flex-flow: row nowrap;
 		justify-content: center;
-		letter-spacing: 10px;
+		
 	}
 
 	
@@ -74,7 +76,6 @@
 
 @media screen and (min-width: 601px) and (max-width: 800px){
 	.logoWeb {
-		
 		max-width: 100%;
 		height: auto;
 		
@@ -115,10 +116,7 @@
 }
 
 @media screen and (min-width: 801px) and (max-width: 1500px){
-	.logoWeb{
-		width: 1000px;
-		height: 230px;
-	}
+	
 	.ul-header{
 		display: flex;
 		justify-items: center;
@@ -130,13 +128,19 @@
 
 	.nav-item{
 		display: flex;
-		flex-flow: row wrap;
+		
 	}
 	.menuMobile a {
 		text-decoration: none;
 		color: #e6ab5e;
 		padding: 0 100px;
 	}
+	.logoWeb{
+		width: 615px;
+		height: 160px;
+		max-width: 100%;
+	}
+	
 	
 }
 
