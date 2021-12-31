@@ -850,15 +850,6 @@ h3 {
     margin: 0px;
     width: 600px;
   }
-
-  .pMobile {
-    display: none;
-  }
-}
-@media screen and (min-width: 1700px) and (max-width: 3500px) {
-  .pMobile {
-    display: none;
-  }
 }
 /*formulario*/
 *, *:before, *:after {
