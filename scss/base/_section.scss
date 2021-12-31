@@ -97,14 +97,15 @@
 		display: flex;
 		flex-flow: row wrap;
 		height: 100%;
-		/* margin:0px 0px 5px 20px; */
+		
 		
 	}
 	.navMobile{
 		background-color: #3e4a3a;
+		border-radius: 10px;
 	}
 	.articulo-1{
-		background-color: #00000061;
+		background-color: #E4CDA7;
 		-webkit-border-bottom-right-radius: 10px;
 		-webkit-border-bottom-left-radius: 10px;
 		-moz-border-radius-bottomright: 10px;
@@ -122,8 +123,19 @@
 		}
 	  
 	}
-	
+	.navegacion{
+		flex: 1 1 100%;
+		background: rgba(138, 135, 109, 0.466);
+		margin: 0px 0px 0px 0px;
+		border-radius: 0.25rem;
+	}
 
+	.imgLigthBox{
+		width: auto;
+		height: auto;
+		display: flex;
+		
+	}
 
 		
 }
